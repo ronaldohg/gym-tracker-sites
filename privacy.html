@@ -41,31 +41,11 @@
 
   <h2>2. Inicio de sesión con Google y copia de seguridad</h2>
   <p>
-    Si eliges iniciar sesión con tu cuenta de Google, la app solicita
-    acceso únicamente a:
-  </p>
-  <ul>
-    <li>Tu dirección de correo electrónico y nombre de perfil de Google, para identificar tu sesión.</li>
-    <li>
-      Una carpeta oculta y privada de tu Google Drive
-      (<code>appDataFolder</code>), reservada exclusivamente para esta
-      app, donde se guarda una copia de seguridad cifrada por Google de
-      tus entrenamientos, plantillas y ejercicios.
-    </li>
-  </ul>
-  <p>
-    La app <strong>no tiene acceso</strong> a ningún otro archivo, foto,
-    documento o carpeta de tu Google Drive. Esta copia de seguridad solo
-    es visible y accesible para la propia app, y se usa exclusivamente
-    para que no pierdas tus datos si desinstalas la app, cambias de
-    dispositivo o borras la app por error.
-  </p>
-  <p>
-    Puedes cerrar sesión en cualquier momento desde el menú de la app.
-    Cerrar sesión no borra la copia de seguridad ya guardada en tu
-    Drive; para eliminarla puedes revocar el acceso de la app desde la
-    configuración de tu cuenta de Google
-    (<a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>).
+    Si inicias sesión con Google, guardamos una copia de tus entrenamientos,
+    plantillas y ejercicios en nuestra base de datos en la nube (Cloud
+    Firestore de Google), asociada únicamente a tu cuenta mediante un
+    identificador único. Esta información solo es accesible por ti; no la
+    compartimos con terceros.
   </p>
 
   <h2>3. Datos que NO recopilamos</h2>

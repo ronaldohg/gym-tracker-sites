@@ -4,43 +4,122 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gym Tracker</title>
+  <meta name="description" content="Gym Tracker: registra tus entrenamientos, circuitos y series por peso o por tiempo, y mira tu progreso." />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="icon" href="logo.png" />
   <style>
+    :root {
+      --night: #0f172a;
+      --cyan: #0fd3df;
+      --teal: #0e7c8c;
+      --text: #0f172a;
+      --muted: #55657a;
+      --card: #ffffff;
+      --bg: #f4f7fa;
+      --line: #d5dee6;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #e2e8f0;
+        --muted: #94a3b8;
+        --card: #131d33;
+        --bg: #0f172a;
+        --line: #26344f;
+        --teal: #0fd3df;
+      }
+    }
+    * { box-sizing: border-box; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      max-width: 700px;
-      margin: 60px auto;
-      padding: 0 20px;
-      color: #0f172a;
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
       line-height: 1.6;
     }
-    h1 { color: #0d9488; }
-    .tagline { color: #64748b; font-size: 1.1em; margin-bottom: 30px; }
-    footer { margin-top: 60px; font-size: 0.9em; color: #94a3b8; }
-    a { color: #0d9488; }
+    .hero {
+      background: linear-gradient(135deg, #0f172a 0%, #0b3a4a 60%, #0e6a78 100%);
+      color: #fff;
+      padding: 56px 20px 48px;
+      text-align: center;
+    }
+    .hero img {
+      width: 120px;
+      height: 120px;
+      filter: drop-shadow(0 0 18px rgba(15, 211, 223, 0.45));
+    }
+    .hero h1 { margin: 12px 0 4px; font-size: 2.4em; letter-spacing: -0.5px; }
+    .tagline { color: var(--cyan); letter-spacing: 0.6px; margin: 0; font-size: 1.1em; }
+    main { max-width: 760px; margin: 0 auto; padding: 32px 20px 24px; }
+    .intro { font-size: 1.08em; }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin: 28px 0;
+      padding: 0;
+      list-style: none;
+    }
+    .features li {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 16px 18px;
+    }
+    .features strong { display: block; color: var(--teal); margin-bottom: 2px; }
+    .features span { color: var(--muted); font-size: 0.95em; }
+    .links { display: flex; flex-wrap: wrap; gap: 10px; margin: 28px 0 0; }
+    .links a {
+      color: var(--teal);
+      border: 1px solid var(--line);
+      background: var(--card);
+      border-radius: 999px;
+      padding: 8px 16px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95em;
+    }
+    .links a:hover { border-color: var(--teal); }
+    footer { text-align: center; margin: 40px 0 32px; font-size: 0.9em; color: var(--muted); }
   </style>
 </head>
 <body>
-  <h1>Gym Tracker</h1>
-  <p class="tagline">Track. Progress. Grow.</p>
+  <header class="hero">
+    <img src="logo.png" alt="Logo de Gym Tracker" />
+    <h1>Gym Tracker</h1>
+    <p class="tagline">Track. Progress. Grow.</p>
+  </header>
 
-  <p>
-    Gym Tracker es una aplicación para registrar tus entrenamientos,
-    llevar el historial de tus ejercicios, ver tu progreso a lo largo
-    del tiempo y guardar plantillas de rutinas para reutilizarlas.
-  </p>
+  <main>
+    <p class="intro">
+      Gym Tracker es una aplicación para registrar tus entrenamientos,
+      llevar el historial de tus ejercicios y ver tu progreso a lo largo
+      del tiempo.
+    </p>
 
-  <p>
-    Opcionalmente, puedes iniciar sesión con tu cuenta de Google para
-    que tus entrenamientos queden respaldados automáticamente y nunca
-    se pierdan, aunque cambies de dispositivo.
-  </p>
+    <ul class="features">
+      <li><strong>Rutinas y circuitos</strong><span>Ejercicios sueltos y circuitos con superseries, en el orden que quieras.</span></li>
+      <li><strong>Por peso o por tiempo</strong><span>Registra repeticiones y kilos, o la duración de ejercicios como la plancha.</span></li>
+      <li><strong>Peso corporal</strong><span>Dominadas, fondos y similares cuentan en tu volumen, con o sin lastre.</span></li>
+      <li><strong>Medidores de progreso</strong><span>Compara el volumen y el tiempo total con tu mejor sesión anterior.</span></li>
+      <li><strong>Plantillas</strong><span>Guarda tus rutinas y empieza con los valores de tu último entrenamiento.</span></li>
+      <li><strong>Más de 1.300 ejercicios</strong><span>Con animaciones, músculos implicados e instrucciones en 6 idiomas.</span></li>
+      <li><strong>Análisis</strong><span>Gráficas de peso máximo, volumen y tiempo por sesión.</span></li>
+      <li><strong>Copia en la nube</strong><span>Opcional, con tu cuenta de Google, para no perder nada al cambiar de móvil.</span></li>
+    </ul>
 
-  <p>
-    <a href="privacy.html">Política de Privacidad</a> ·
-    <a href="terms.html">Términos del Servicio</a> .
-    <a href="manage-data.html">Gestionar Datos de Cuenta</a> .
-    <a href="delete-account.html">Eliminar Cuenta</a>
-  </p>
+    <p>
+      La app funciona sin conexión y guarda tus datos en el propio
+      dispositivo. Tiene modo oscuro y claro, temporizador de descanso y
+      exportación a Excel.
+    </p>
+
+    <nav class="links">
+      <a href="privacy.html">Política de Privacidad</a>
+      <a href="terms.html">Términos del Servicio</a>
+      <a href="manage-data.html">Gestionar Datos de Cuenta</a>
+      <a href="delete-account.html">Eliminar Cuenta</a>
+    </nav>
+  </main>
 
   <footer>
     &copy; <span id="year"></span> Gym Tracker

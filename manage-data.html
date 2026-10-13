@@ -13,25 +13,25 @@
       color: #0f172a;
       line-height: 1.7;
     }
-    h1 { color: #0d9488; }
-    h2 { color: #134e4a; margin-top: 32px; }
-    a { color: #0d9488; }
+    h1 { color: #0e7c8c; }
+    h2 { color: #0b3a4a; margin-top: 32px; }
+    a { color: #0e7c8c; }
     .updated { color: #94a3b8; font-size: 0.9em; }
-    .steps { background: #f0fdfa; border-radius: 8px; padding: 16px 24px; }
+    .steps { background: #ecfbfd; border-radius: 8px; padding: 16px 24px; }
     table { border-collapse: collapse; width: 100%; margin: 16px 0; }
     th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid #e2e8f0; }
-    th { color: #134e4a; }
+    th { color: #0b3a4a; }
   </style>
 </head>
 <body>
   <h1>Gestionar datos de la aplicación</h1>
-  <p class="updated">Última actualización: 30/08/2026</p>
+  <p class="updated">Última actualización: 13/10/2026</p>
 
   <p>
     Puedes solicitar la eliminación de datos específicos recogidos por
     Gym Tracker <strong>sin eliminar tu cuenta por completo</strong>. Esto
     incluye tu historial de entrenamientos (actividad), plantillas de
-    rutinas y lista de ejercicios. Si en cambio quieres eliminar tu cuenta
+    rutinas, lista de ejercicios y peso corporal. Si en cambio quieres eliminar tu cuenta
     entera, visita la página de
     <a href="delete-account.html">Eliminar cuenta y datos</a>.
   </p>
@@ -44,7 +44,7 @@
     </tr>
     <tr>
       <td>Historial de actividad</td>
-      <td>Tus entrenamientos guardados: fecha, ejercicios, series, repeticiones, peso y notas.</td>
+      <td>Tus entrenamientos guardados: fecha, ejercicios, circuitos, series (repeticiones, peso o tiempo, RIR) y notas.</td>
     </tr>
     <tr>
       <td>Plantillas de rutina</td>
@@ -53,6 +53,10 @@
     <tr>
       <td>Lista de ejercicios</td>
       <td>Nombres de ejercicios que usas para autocompletar al crear rutinas.</td>
+    </tr>
+    <tr>
+      <td>Peso corporal</td>
+      <td>Opcional. El peso que indicas en Perfil y el guardado en las series marcadas como "Peso corporal".</td>
     </tr>
   </table>
   <p>
@@ -73,7 +77,12 @@
     </p>
     <p>
       <strong>Borrar un ejercicio de la lista:</strong> menú (☰) →
-      "Ejercicios" → menú de tres puntos junto al ejercicio → "Eliminar".
+      "Ejercicios" → pestaña "Personalizados" → menú de tres puntos junto
+      al ejercicio → "Eliminar".
+    </p>
+    <p>
+      <strong>Cambiar tu peso corporal:</strong> menú (☰) → "Perfil".
+      Para quitarlo de una serie, abre la serie y desmarca "Peso corporal".
     </p>
   </div>
   <p>
@@ -95,7 +104,7 @@
     desde la misma dirección de correo con la que iniciaste sesión en la
     app, indicando en el asunto "Eliminar mi historial" y qué datos
     quieres borrar (todo, o solo cierto rango de fechas). Procesaremos la
-    solicitud dentro de los siguientes [COMPLETAR PLAZO, ej. 30] días y
+    solicitud dentro de los siguientes 30 días y
     te confirmaremos por correo cuando esté hecho. Tu cuenta y tu acceso
     a la app seguirán funcionando con normalidad.
   </p>
